@@ -1,5 +1,6 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.gradle.api.tasks.testing.logging.TestLogEvent
+import de.uecodes.buildSrc.Project
 
 plugins {
     org.jetbrains.kotlin.jvm
@@ -8,6 +9,8 @@ plugins {
 repositories {
     mavenCentral()
 }
+
+group = "${Project.GROUP}.${Project.NAME.lowercase()}.${project.name.lowercase()}"
 
 val targetJavaVersion: JavaVersion = JavaVersion.VERSION_21
 java {
