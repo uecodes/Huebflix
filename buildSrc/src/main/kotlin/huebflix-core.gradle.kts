@@ -22,7 +22,6 @@ java {
 }
 
 kotlin {
-    explicitApi()
     compilerOptions {
         allWarningsAsErrors = true
     }
