@@ -12,3 +12,6 @@ kotlin {
     }
 }
 
+dependencies {
+    implementation(libs.bundles.build.src)
+}
