@@ -1,4 +1,4 @@
-name: gradle build
+name: build
 
 on:
   workflow_call:
@@ -31,7 +31,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Change directory
+      - name: Change directory to huebflix frontend
         run: cd huebflix
 
       - name: Set up Node.js
@@ -40,9 +40,10 @@ jobs:
           node-version: "23"
           cache: "npm"
 
-
       - name: Install dependencies
         run: npm install
+        working-directory: huebflix
 
       - name: Build project
         run: npm run build
+        working-directory: huebflix
