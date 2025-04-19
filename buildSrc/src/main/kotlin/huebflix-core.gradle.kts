@@ -4,6 +4,7 @@ import de.uecodes.buildSrc.Project
 
 plugins {
     org.jetbrains.kotlin.jvm
+    org.jetbrains.kotlin.plugin.serialization
 }
 
 repositories {
