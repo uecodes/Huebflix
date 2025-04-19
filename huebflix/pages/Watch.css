@@ -1,0 +1,39 @@
+.watch-box {
+    display: flex;
+    flex: 1;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    animation: float-in 0.5s ease-in-out;
+}
+
+.watch-box > div {
+    width: 100%;
+    height: 100%;
+}
+
+.watch-page {
+    display: flex;
+    height: calc(100vh - var(--nav-bar-size));
+    align-items: stretch;
+    overflow-y: hidden;
+}
+
+.video-title {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .watch-page {
+        flex-direction: column-reverse;
+    }
+
+    .watch-box {
+        animation: none;
+    }
+
+    .watch-box > div {
+        width: 100%;
+        height: 100%;
+    }
+}

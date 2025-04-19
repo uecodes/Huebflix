@@ -1,0 +1,41 @@
+{
+    "projects": [
+        {
+            "id": "PL-rcikTDXvUA6PqXelTUNQhKAHUvJDEWG",
+            "title": "Let's Play The Legend of Zelda: Phantom Hourglass",
+            "thumbnail": "assets/phantom_hourglass.png",
+            "tags": [
+                "zelda",
+                "100%"
+            ]
+        },
+        {
+            "id": "PL-rcikTDXvUA6PqXelTUNQhKAHUvJDEWG",
+            "title": "Let's Play The Legend of Zelda: Skyward Sword",
+            "thumbnail": "assets/skyward_sword.png",
+            "tags": [
+                "zelda",
+                "100%"
+            ]
+        },
+        {
+            "id": "PL-rcikTDXvUA6PqXelTUNQhKAHUvJDEWG",
+            "title": "Let's Play The Legend of Zelda: Tears of the Kingdom",
+            "thumbnail": "assets/totk.png",
+            "tags": [
+                "zelda",
+                "100%"
+            ]
+        },
+        {
+            "id": "PL-rcikTDXvUBjZIbco5YswOoGOSmyZIt-",
+            "title": "Let's Play The Legend of Zelda: Twilight Princess",
+            "thumbnail": "/assets/twilight_princess.png",
+            "logo": "/assets/logo/TPHD.png",
+            "tags": [
+                "zelda",
+                "100%"
+            ]
+        }
+    ]
+}
