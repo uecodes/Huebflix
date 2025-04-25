@@ -1,5 +1,10 @@
 package de.uecodes.huebflix
 
+import io.ktor.server.engine.embeddedServer
+import io.ktor.server.netty.Netty
+
+
 fun main() {
-    println("Hello, Huebflix!")
+    val server = embeddedServer(Netty, port = 8080, host = "localhost") {}
+    server.start(wait = true)
 }
