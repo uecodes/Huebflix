@@ -5,6 +5,8 @@ import de.uecodes.buildSrc.Project
 plugins {
     org.jetbrains.kotlin.jvm
     org.jetbrains.kotlin.plugin.serialization
+    io.ktor.plugin
+    application
 }
 
 repositories {
@@ -53,4 +55,8 @@ tasks {
             exceptionFormat = TestExceptionFormat.FULL
         }
     }
+}
+
+application {
+    mainClass.set("${Project.GROUP}.${Project.NAME.lowercase()}.${project.name.replaceFirstChar { it.uppercase() }}Kt")
 }
