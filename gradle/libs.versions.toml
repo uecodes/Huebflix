@@ -31,9 +31,11 @@ ktor-server-test = { module = "io.ktor:ktor-server-test-host", version.ref = "kt
 # actual plugins, but needed in buildSrc as dependencies
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 serialization-gradle-plugin = { module = "org.jetbrains.kotlin.plugin.serialization:org.jetbrains.kotlin.plugin.serialization.gradle.plugin", version.ref = "kotlin" }
+ktor-gradle-plugin = { module = "io.ktor.plugin:io.ktor.plugin.gradle.plugin", version.ref = "ktor" }
 
 [bundles]
 build-src = [
   "kotlin-gradle-plugin",
-  "serialization-gradle-plugin"
+  "serialization-gradle-plugin",
+  "ktor-gradle-plugin"
 ]
