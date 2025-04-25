@@ -1,10 +1,7 @@
 package de.uecodes.huebflix
 
 /**
- * Huebflix DSL marker.
- *
- * This annotation is used to mark DSL elements in the Huebflix project.
- * It helps to prevent name clashes in DSL builders.
+ * A marker annotation for the Huebflix's DSL (Domain-Specific Language) builders.
  *
  * @since 0.1.0
  */
