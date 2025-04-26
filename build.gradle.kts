@@ -14,6 +14,9 @@ dependencies {
     implementation(libs.ktor.server.rate.limit)
     implementation(libs.ktor.server.content.negotiation)
     implementation(libs.ktor.server.resources)
+    implementation(libs.ktor.server.swagger)
+    implementation(libs.ktor.server.openapi)
+    implementation(libs.ktor.server.swagger.codegen)
 
     // Ktor common
     implementation(libs.ktor.common.kotlinx.serialization.json)
