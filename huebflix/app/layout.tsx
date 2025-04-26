@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "Huebflix",
@@ -21,7 +22,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="relative min-h-screen">
+            <Navbar />
+            <main className="pt-16">
+              {children}
+            </main>
+          </div>
         </ThemeProvider>
       </body>
     </html>
