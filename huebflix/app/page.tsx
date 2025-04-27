@@ -6,22 +6,24 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative h-[80vh] w-full">
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
         <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center" />
+        {/* Vignette Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/80" />
         <div className="relative h-full flex items-center">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl">
-              <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
                 Willkommen bei{" "}
                 <span className="bg-gradient-to-r from-red-600 via-red-500 to-red-600 bg-clip-text text-transparent">
                   Huebflix
                 </span>
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8">
+              <p className="text-lg md:text-xl text-gray-200 mb-8">
                 Entdecke die Welt rund um Huebi mit exklusiven Inhalten und mehr.
               </p>
               <div className="flex gap-4">
-                <Button size="lg">
+                <Button size="lg" className="bg-white text-black hover:bg-gray-200">
                   <Play className="mr-2 h-5 w-5" />
                   Abspielen
                 </Button>
